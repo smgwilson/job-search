@@ -1,0 +1,12 @@
+<h1>
+  Agencies
+</h1>
+
+<p>
+  <% @agencies.each do |agency| %>
+      <%= agency.agency_name %> <br>
+  <% end %>
+</p>
+
+<%= link_to 'Add an Agency', new_agency_path %>
+

@@ -1,0 +1,15 @@
+<h1>Add an Agency</h1>
+
+<%=form_for @agency do |f| %>
+    <p>
+      <%=f.label :agency_name %> <br>
+      <%=f.text_field :agency_name %>
+    </p>
+
+    <p>
+      <%= f.submit %>
+    </p>
+
+<% end %>
+
+<%= link_to 'Back', agencies_path %>
